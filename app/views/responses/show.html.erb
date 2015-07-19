@@ -1,0 +1,63 @@
+<h1><%= @response.name %></h1>
+
+
+	<% if @response.name == "FYG Positive" %>
+		<article>
+			<%= @response.intro.sample %>, Customer.
+			<br/> 
+			<br/>
+			<%= @response.line1.sample %>
+			<%= @response.line2.sample %>
+			<%= @response.line3.sample %>
+			<%= @response.line4.sample %>
+			<%= @response.line5.sample %>
+			<br/>
+			<br/>
+			<%= @response.close.sample %>
+			<br/>
+			<br/>
+			Business
+		</article>
+		<% end %>
+	<% if @response.name == "FYG Negative" %>
+		<article>
+			<%= @response.intro.sample %>, Customer.
+			<br/> 
+			<br/>
+			<%= @response.line1.sample %>
+			<%= @response.line2.sample %>
+			<%= @response.line3.sample %>
+			<%= @response.line4.sample %>(user email).
+			<%= @response.line5.sample %>
+			<%= @response.line6.sample %>
+
+			<br/>
+			<br/>
+			<%= @response.close.sample %>
+			<br/>
+			<br/>
+			Business
+		</article>
+		<% end %>
+	<% if @response.name == "FYG Neutral" %>
+		<article>
+			<%= @response.intro.sample %>, Customer.
+			<br/> 
+			<br/>
+			<%= @response.line1.sample %>
+			<%= @response.line2.sample %>
+			<%= @response.line3.sample %>(user email),
+			<%= @response.line4.sample %>
+			<br/>
+			<br/>
+			<%= @response.close.sample %>
+			<br/>
+			<br/>
+			Business
+		</article>
+	<% end %>
+
+<br/>
+<br/>
+<%= link_to "Don't Like This? Generate a New Response!", response_path %> | 
+<%= link_to "Generate a Response for a Different Review", root_path %>
