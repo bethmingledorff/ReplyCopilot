@@ -54,7 +54,7 @@ Response.create!([
   	close: ["Thank you,", "Best,"]
   },
   {
-  	name: "Trip Advisor Postitive",
+  	name: "Trip Advisor Positive",
   	intro: ["Thanks",  "Hooray",  "Yay"],
   	line1: ["Great to hear! ",  "Glad to hear it! "],
   	line2: ["Come back soon! ", "See you soon! "],
