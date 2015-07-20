@@ -1,5 +1,16 @@
 Response.create!([
   {
+  	name: "FYG Positive",
+  	line1: ["Your kind words are much appreciated. ", "I’m so pleased you had a pleasant experience. ", "We work really hard, and it is great to see those efforts pay off. ", "We are beaming with pride knowing that we hit the mark and delivered on everthing that we promised.  ", "We are constantly hard at work doing everything we can to deliver high quality experiences to every one of our customers. ", "We want every single customer that walks through our doors to experience the same level of service. "],
+  	line2: ["Your opinion is valuable to us and helps us shape everything that we do ", "We are so glad we were able to help you out. Helping our customers is what we love best. ", "It is thanks to customers like you taking the time to tell us what we are doing right that we are able to constantly strive for excellence. "],
+  	line3: ["By sharing with us not only do you encourage our team; you give us the necessary information to constantly strive to try our best. ", "Customers just like you make doing what we do a true pleasure. Everyone looks forward to serving you and yours on your next visit. ", "We may not be as large as other businesses but we are committed to our customers as our priority #1! "],
+  	line4: ["Your opinion also empowers other people in the community to connect with us and enjoy all the services we currently provide. ", "Our brand promise is all about delivering seamless experiences that exceed customer expectations! ", "Thank you once again for giving us a pat on the back. We value your patronage and friendship. "],
+  	line5: ["We can't wait for the next opportunity to serve you; and will do everthing in our power to once again allow you to experience the best that we have to offer. ", "We sincerely look forward to serving you time after time. ", "Please visit us again. It will be our honor and delight to serve you "],
+  	line6: [],
+  	close: ["Until Next Time,", "Warm Regards,", "Sincerely,"],
+  	intro: ["Thank you so much", "Thank you for the great review", "We are are so grateful for your feedback", "Thank you for taking the time out of your busy schedule to share your opinion with other community members", "WOW! We can't begin to tell you how nice it is to hear words of encouragement appreciation and praise", "Thank you so much for taking the time to write such a nice review"]
+  },
+  {
   	name: "FYG Negative", 
   	line1: ["I’m deeply sorry for your negative experience. ", "We regret to hear of your unfortunate experience. "],
   	line2: ["We always strive to create the best customer experience, ", "Our goal is to satisfy every customer, ", "We work really hard, ", "We work hard to ensure customer happiness, "],
@@ -20,17 +31,6 @@ Response.create!([
   	line6: [], 
   	close: ["Sincerely,", "Best Regards,", "Kindest Regards,"],
   	intro: ["Thank you for sharing your feedback", "Thank you for your comments"]
-  },
-  {
-  	name: "FYG Positive",
-  	line1: ["Your kind words are much appreciated. ", "I’m so pleased you had a pleasant experience. ", "We work really hard, and it is great to see those efforts pay off. ", "We are beaming with pride knowing that we hit the mark and delivered on everthing that we promised.  ", "We are constantly hard at work doing everything we can to deliver high quality experiences to every one of our customers. ", "We want every single customer that walks through our doors to experience the same level of service. "],
-  	line2: ["Your opinion is valuable to us and helps us shape everything that we do ", "We are so glad we were able to help you out. Helping our customers is what we love best. ", "It is thanks to customers like you taking the time to tell us what we are doing right that we are able to constantly strive for excellence. "],
-  	line3: ["By sharing with us not only do you encourage our team; you give us the necessary information to constantly strive to try our best. ", "Customers just like you make doing what we do a true pleasure. Everyone looks forward to serving you and yours on your next visit. ", "We may not be as large as other businesses but we are committed to our customers as our priority #1! "],
-  	line4: ["Your opinion also empowers other people in the community to connect with us and enjoy all the services we currently provide. ", "Our brand promise is all about delivering seamless experiences that exceed customer expectations! ", "Thank you once again for giving us a pat on the back. We value your patronage and friendship. "],
-  	line5: ["We can't wait for the next opportunity to serve you; and will do everthing in our power to once again allow you to experience the best that we have to offer. ", "We sincerely look forward to serving you time after time. ", "Please visit us again. It will be our honor and delight to serve you "],
-  	line6: [],
-  	close: ["Until Next Time,", "Warm Regards,", "Sincerely,"],
-  	intro: ["Thank you so much", "Thank you for the great review", "We are are so grateful for your feedback", "Thank you for taking the time out of your busy schedule to share your opinion with other community members", "WOW! We can't begin to tell you how nice it is to hear words of encouragement appreciation and praise", "Thank you so much for taking the time to write such a nice review"]
   },
   {
   	name: "Twitter Positive",
