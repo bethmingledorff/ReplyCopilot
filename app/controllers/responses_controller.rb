@@ -1,7 +1,7 @@
 class ResponsesController < ApplicationController
 
 	def index
-		@responses = Response.all
+		@responses = Response.order(:id)
 	end
 
 	def show

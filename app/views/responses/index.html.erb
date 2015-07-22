@@ -1,6 +1,8 @@
 <h1>Review Options</h1>
 <% @responses.each do |response| %>
-		<h2><%= link_to(response.name, response_path(response)) %><h2>
+		<h2>
+			<%= link_to(response.name, response_path(response)) %>
+		<h2>
 <% end %>
 
 	<!-- <div class = "row">
