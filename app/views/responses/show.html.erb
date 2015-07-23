@@ -1,7 +1,7 @@
 <h1><%= @response.name %></h1>
 
 
-	<% if @response.name == "FYG Positive" %>
+	<% if @response.name == "Positive" %>
 		<article>
 			<%= @response.intro.sample %>, Customer.
 			<br/> 
@@ -20,7 +20,7 @@
 		</article>
 		<% end %>
 
-	<% if @response.name == "FYG Negative" %>
+	<% if @response.name == "Negative" %>
 		<article>
 			<%= @response.intro.sample %>, Customer.
 			<br/> 
@@ -41,7 +41,7 @@
 		</article>
 		<% end %>
 
-	<% if @response.name == "FYG Neutral" %>
+	<% if @response.name == "Neutral" %>
 		<article>
 			<%= @response.intro.sample %>, Customer.
 			<br/> 
@@ -61,98 +61,99 @@
 		</article>
 	<% end %>
 
-		<% if @response.name == "Twitter Positive" %>
-		<article>
-			@Twitter_Handle, <%= @response.intro.sample %>
-			<br/> 
-			<br/>
-			<%= @response.line1.sample %>
-			<%= @response.line2.sample %>
-			<%= @response.close.sample %>
-			<br/>
-			<br/>
-			Business
-		</article>
-		<% end %>
-
-	<% if @response.name == "Twitter Negative" %>
-		<article>
-			@Twitter_Handle, <%= @response.intro.sample %>
-			<br/> 
-			<br/>
-			<%= @response.line1.sample %>
-			<%= @response.line2.sample %>(user email).
-			<br/>
-			<br/>
-			<%= @response.close.sample %>
-			<br/>
-			<br/>
-			Business
-		</article>
-		<% end %>
-
-	<% if @response.name == "Twitter Neutral" %>
-		<article>
-			@Twitter_Handle, <%= @response.intro.sample %>
-			<br/> 
-			<br/>
-			<%= @response.line1.sample %>
-			<%= @response.line2.sample %>
-			<br/>
-			<br/>
-			<%= @response.close.sample %>
-			<br/>
-			<br/>
-			Business
-		</article>
-	<% end %>
-
-		<% if @response.name == "Trip Advisor Positive" %>
-		<article>
-			<%= @response.intro.sample %>, Customer.
-			<br/> 
-			<br/>
-			<%= @response.line1.sample %>
-			<%= @response.line2.sample %>
-			<%= @response.close.sample %>
-			<br/>
-			<br/>
-			Business
-		</article>
-		<% end %>
-
-	<% if @response.name == "Trip Advisor Negative" %>
-		<article>
-			<%= @response.intro.sample %>
-			<br/> 
-			<br/>
-			<%= @response.line1.sample %>
-			<%= @response.line2.sample %>(user email).
-			<br/>
-			<br/>
-			<%= @response.close.sample %>
-			<br/>
-			<br/>
-			Business
-		</article>
-		<% end %>
 		
-	<% if @response.name == "Trip Advisor Neutral" %>
+<!-- 		<%# if @response.name == "Twitter Positive" %>
 		<article>
-			<%= @response.intro.sample %>Customer.
+			@Twitter_Handle, <%#= @response.intro.sample %>
 			<br/> 
 			<br/>
-			<%= @response.line1.sample %>
-			<%= @response.line2.sample %>
-			<br/>
-			<br/>
-			<%= @response.close.sample %>
+			<%#= @response.line1.sample %>
+			<%#= @response.line2.sample %>
+			<%#= @response.close.sample %>
 			<br/>
 			<br/>
 			Business
 		</article>
-	<% end %>
+		<%# end %>
 
+	<%# if @response.name == "Twitter Negative" %>
+		<article>
+			@Twitter_Handle, <%#= @response.intro.sample %>
+			<br/> 
+			<br/>
+			<%#= @response.line1.sample %>
+			<%#= @response.line2.sample %>(user email).
+			<br/>
+			<br/>
+			<%#= @response.close.sample %>
+			<br/>
+			<br/>
+			Business
+		</article>
+		<%# end %>
+
+	<%# if @response.name == "Twitter Neutral" %>
+		<article>
+			@Twitter_Handle, <%#= @response.intro.sample %>
+			<br/> 
+			<br/>
+			<%#= @response.line1.sample %>
+			<%#= @response.line2.sample %>
+			<br/>
+			<br/>
+			<%#= @response.close.sample %>
+			<br/>
+			<br/>
+			Business
+		</article>
+	<%# end %>
+
+		<%# if @response.name == "Trip Advisor Positive" %>
+		<article>
+			<%#= @response.intro.sample %>, Customer.
+			<br/> 
+			<br/>
+			<%#= @response.line1.sample %>
+			<%#= @response.line2.sample %>
+			<%#= @response.close.sample %>
+			<br/>
+			<br/>
+			Business
+		</article>
+		<%# end %>
+
+	<%# if @response.name == "Trip Advisor Negative" %>
+		<article>
+			<%#= @response.intro.sample %>
+			<br/> 
+			<br/>
+			<%#= @response.line1.sample %>
+			<%#= @response.line2.sample %>(user email).
+			<br/>
+			<br/>
+			<%#= @response.close.sample %>
+			<br/>
+			<br/>
+			Business
+		</article>
+		<%# end %>
+		
+	<%# if @response.name == "Trip Advisor Neutral" %>
+		<article>
+			<%#= @response.intro.sample %>Customer.
+			<br/> 
+			<br/>
+			<%#= @response.line1.sample %>
+			<%#= @response.line2.sample %>
+			<br/>
+			<br/>
+			<%#= @response.close.sample %>
+			<br/>
+			<br/>
+			Business
+		</article>
+	<%# end %>
+ -->
 
 
 <br/>
