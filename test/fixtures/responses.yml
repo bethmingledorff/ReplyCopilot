@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  intro: MyText
+  line1: MyText
+  line2: MyText
+  line3: MyText
+  line4: MyText
+  line5: MyText
+  line6: MyText
+  close: MyText
+
+two:
+  name: MyString
+  intro: MyText
+  line1: MyText
+  line2: MyText
+  line3: MyText
+  line4: MyText
+  line5: MyText
+  line6: MyText
+  close: MyText

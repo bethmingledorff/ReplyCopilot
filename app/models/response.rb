@@ -10,4 +10,3 @@ serialize :line6,Array
 serialize :close,Array
 
 end
-
