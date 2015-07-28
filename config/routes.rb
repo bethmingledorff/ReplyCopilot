@@ -5,8 +5,6 @@ Rails.application.routes.draw do
 
   get "responses" => "responses#index"
   get "responses/:id" => "responses#show", as: "response"
-  get "responses/fyg_negative" => "responses#fyg_negative"
-  get "responses/fyg_neutral" => "responses#fyg_neutral"
 
 
   # The priority is based upon order of creation: first created -> highest priority.
