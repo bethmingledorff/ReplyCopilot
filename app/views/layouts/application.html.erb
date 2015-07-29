@@ -1,26 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>RT2</title>
-  <%#= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%#= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <title>ReplyCoPilot</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<!-- This should probably go in nav partial once we have formatting put in -->
-<p>
-  <% if user_signed_in? %>
-  <li><%= link_to current_user.email, edit_user_registration_path %></li>
-    <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
-  <% else %>
-    <li><%= link_to "Sign Up", new_user_registration_path %></li>
-    <li><%= link_to "Login", new_user_session_path %></li>
-    <% end %>
-</p>
-  <% if notice %><div class="alert alert-info"><%= notice %></div><%end%>
-  <% if alert %><div class="alert alert-warning"><%= alert %></div><% end %>
-
 
 <%= yield %>
 
