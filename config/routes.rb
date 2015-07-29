@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   get "responses" => "responses#index"
   get "responses/:id" => "responses#show", as: "response"
+  post "responses" => "responses#create"
 
 
   # The priority is based upon order of creation: first created -> highest priority.
