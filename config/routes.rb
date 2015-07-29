@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-
-  devise_for :users
+  
   root to: 'responses#index'
 
   get "responses" => "responses#index"

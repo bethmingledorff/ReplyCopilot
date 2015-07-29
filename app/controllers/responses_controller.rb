@@ -8,6 +8,11 @@ class ResponsesController < ApplicationController
 	end
 
 	def create
-		puts "Creating response!"
+		puts "============"
+		puts "CREATING RESPONSE:"
+		puts params
+		puts "============"
+
+		render nothing: true
 	end
 end
