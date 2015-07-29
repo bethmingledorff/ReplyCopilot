@@ -52,15 +52,15 @@
 			    <form action="/responses" method="post">
 						<div class="form-group">
 							<label for="exampleInputName1">Your name</label>
-							<input type="text" name="username" class="form-control" id="exampleInputName1" placeholder="First and last name">
+							<input type="text" name="response[username]" class="form-control" id="exampleInputName1" placeholder="First and last name">
 						</div>
 						<div class="form-group">
 							<label for="exampleInputEmail1">Your Email</label>
-							<input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="example@website.com">
+							<input type="email" name="response[email]" class="form-control" id="exampleInputEmail1" placeholder="example@website.com">
 						</div>
 						<div class="checkbox">
 							<label>
-								<%= check_box_tag "optin" %>
+								<%= check_box_tag "response[optin]" %>
 								Opt in to our email list (*required)  <!-- TODO: Make false be "false". -->
 							</label>
 						</div>
@@ -69,16 +69,16 @@
 						</h5>
 						<div class="btn-group btn-group-justified" role="group" aria-label="...">
 							<%= label_tag 'positive', 'Positive' %>
-							<%= radio_button_tag 'response_quality', 'positive', class: 'btn btn-default' %>
+							<%= radio_button_tag 'response[response_quality]', 'Positive', class: 'btn btn-default' %>
 							<%= label_tag 'negative', 'Negative' %>
-							<%= radio_button_tag 'response_quality', 'negative', class: 'btn btn-default' %>
+							<%= radio_button_tag 'response[response_quality]', 'Negative', class: 'btn btn-default' %>
 							<%= label_tag 'neutral', 'Neutral' %>
-							<%= radio_button_tag 'response_quality', 'neutral', class: 'btn btn-default' %>
+							<%= radio_button_tag 'response[response_quality]', 'Neutral', class: 'btn btn-default' %>
 						</div>
 						<p style="line-height: 5px;">&nbsp;</p>
 						<div class="form-group">
 							<label for="exampleInputName1">Customer Name</label>
-							<input type="text" name="customer_name" class="form-control" id="exampleInputName1" placeholder="Customer name">
+							<input type="text" name="response[customer_name]" class="form-control" id="exampleInputName1" placeholder="Customer name">
 						</div>
 						<div class="row">
 							<div class="col-xs-12">

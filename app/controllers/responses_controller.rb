@@ -4,15 +4,17 @@ class ResponsesController < ApplicationController
 	end
 
 	def show
-		@response = Response.find(params[:id])
+		# TODO.
 	end
 
 	def create
-		puts "============"
-		puts "CREATING RESPONSE:"
-		puts params
-		puts "============"
+		response_quality = params['response']['response_quality']
 
-		render nothing: true
+		@response = Response.find_by_name(response_quality)
+		@customer = params['customer_name']
+		@email 	  = params['email']
+		@username = params['username']
+
+		render template: 	'responses/show.html.erb'  # missing id
 	end
 end
