@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  greeting: MyString
+  line_one: MyText
+  line_two: MyText
+  line_three: MyText
+  line_four: MyText
+  closing: MyText
+  salutation: MyText
+
+two:
+  greeting: MyString
+  line_one: MyText
+  line_two: MyText
+  line_three: MyText
+  line_four: MyText
+  closing: MyText
+  salutation: MyText
