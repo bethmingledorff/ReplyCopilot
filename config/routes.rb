@@ -7,6 +7,9 @@ Rails.application.routes.draw do
   get "responses/new" => "responses#new"
   get "responses/:id" => "responses#show", as: "response"
 
+  get "static_pages/about" => "static_pages#about"
+  get "static_pages/resources" => "static_pages#resources"
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
