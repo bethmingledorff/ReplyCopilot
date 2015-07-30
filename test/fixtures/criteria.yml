@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  customer_name: MyString
+  response_type: MyString
+  responder_name: MyString
+  responder_email: MyString
+
+two:
+  customer_name: MyString
+  response_type: MyString
+  responder_name: MyString
+  responder_email: MyString

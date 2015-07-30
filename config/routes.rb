@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
 
+  resources :criteria
   resources :replies
   resources :users
-  root to: 'users#new'
+  root to: 'criteria#new'
 
   get "responses/new" => "responses#new"
   get "responses/:id" => "responses#show", as: "response"
