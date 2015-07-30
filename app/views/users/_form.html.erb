@@ -23,6 +23,14 @@
     <%= f.label :user_email %> (Your email to be incuded in your reply)<br>
     <%= f.text_field :user_email, style: "color: black" %>
   </div>
+    <div class="field">
+    <%= f.label :response_type %> (positive, negative, neutral)<br>
+    <%= f.text_field :response_type, style: "color: black" %>
+  </div>
+    <div class="field">
+    <%= f.label :reviewer_name %> (Name of Customer)<br>
+    <%= f.text_field :reviewer_name, style: "color: black" %>
+  </div>
   <div class="checkbox">
     <label>
       <input type="checkbox"> I understand that I am opting in to a mailing list

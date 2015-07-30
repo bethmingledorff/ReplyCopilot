@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<!-- <p>
+  <strong>Customer name:</strong>
+  <%= @criterium.customer_name %>
+</p>
+
+<p>
+  <strong>Response type:</strong>
+  <%= @criterium.response_type %>
+</p>
+
+<p>
+  <strong>Responder name:</strong>
+  <%= @criterium.responder_name %>
+</p>
+
+<p>
+  <strong>Responder email:</strong>
+  <%= @criterium.responder_email %>
+</p> -->
+
+
+<% if @criterium.response_type == "positive"%>
+    <p><%=@positive_int %> <%=@criterium.customer_name%>. <%=@positive_line1%>  <%= @positive_line2%> <%= @positive_line3 %>  <%= @positive_line4 %> <%= @positive_line5 %>  <%= @positive_close %> <br><%=@criterium.responder_name%> <br> <%= @criterium.responder_email %>
+</p>  
+<% elsif @criterium.response_type == "neutral" %>
+      <p><%=@neutral_int %> <%=@neutral_line1%>  <%= @neutral_line2%> <%= @neutral_line3 %>  <%= @neutral_line4 %> <%= @neutral_line5 %> <%= @neutral_close %> <%= @criterium.responder_email %>.<br><%=@criterium.responder_name%> 
+</p> 
+<% elsif @criterium.response_type == "negative" %>
+  <p><%=@negative_int %> <%=@negative_line1%>  <%= @negative_line2%> <%= @negative_line3 %>  <%= @negative_line4 %> <%= @criterium.responder_email %> <%= @negative_line5 %> <%= @negative_close %> <br><%=@criterium.responder_name%> 
+
+  </p> 
+<% end %>
+
+
+
+<%= link_to 'Generate Another!', criteria_path %>
+<%= link_to 'Enter New Information', new_criterium_path %>
