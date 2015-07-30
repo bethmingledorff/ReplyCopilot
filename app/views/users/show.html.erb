@@ -11,9 +11,15 @@
 </p>
 
 <p>
-  <strong>Customer name:</strong>
-  <%= @user.customer_name %>
+  <strong>response type:</strong>
+  <%= @user.response_type %>
 </p>
+
+<p>
+  <strong>User email:</strong>
+  <%= @user.reviewer_name %>
+</p>
+
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

@@ -1,0 +1,40 @@
+<%= form_for(@criterium) do |f| %>
+  <% if @criterium.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@criterium.errors.count, "error") %> prohibited this criterium from being saved:</h2>
+
+      <ul>
+      <% @criterium.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :customer_name %><br>
+    <%= f.text_field :customer_name %>
+  </div>
+  <div class="field">
+    <%= f.label :response_type %><br>
+    <%= f.select(:response_type, options_for_select([["positive", "positive"], ["neutral", "neutral"], ["negative", "negative"]])) %>
+  </div>
+  <div class="field">
+    <%= f.label :responder_name %><br>
+    <%= f.text_field :responder_name %>
+  </div>
+  <div class="field">
+    <%= f.label :responder_email %><br>
+    <%= f.text_field :responder_email %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+
+
+
+
+
+
