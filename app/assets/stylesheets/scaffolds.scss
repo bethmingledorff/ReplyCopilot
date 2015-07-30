@@ -19,10 +19,10 @@ pre {
 }
 
 a {
-  color: #000;
+  color: white;
 
   &:visited {
-    color: #666;
+    color: white;
   }
 
   &:hover {
@@ -34,6 +34,7 @@ a {
 div {
   &.field, &.actions {
     margin-bottom: 10px;
+    color: white
   }
 }
 
