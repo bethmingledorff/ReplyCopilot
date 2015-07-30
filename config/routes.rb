@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :users
   root to: 'users#new'
 
-  get "responses" => "responses#index"
+  get "responses/new" => "responses#new"
   get "responses/:id" => "responses#show", as: "response"
 
 

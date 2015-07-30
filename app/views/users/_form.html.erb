@@ -1,3 +1,7 @@
+<div class="row">
+
+  <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+
 <%= form_for(@user) do |f| %>
   <% if @user.errors.any? %>
     <div id="error_explanation">
@@ -13,17 +17,20 @@
 
   <div class="field">
     <%= f.label :user_name %><br>
-    <%= f.text_field :user_name %>
+    <%= f.text_field :user_name, style: "color: black" %>
   </div>
   <div class="field">
     <%= f.label :user_email %><br>
-    <%= f.text_field :user_email %>
+    <%= f.text_field :user_email, style: "color: black" %>
   </div>
-  <div class="field">
-    <%= f.label :customer_name %><br>
-    <%= f.text_field :customer_name %>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Opt in to our email list
+    </label>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit style: "color: black" %>
   </div>
+</div>
+</div>
 <% end %>
