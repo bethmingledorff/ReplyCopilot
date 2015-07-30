@@ -1,0 +1,35 @@
+<%= form_for(@response) do |f| %>
+  <% if @response.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@response.errors.count, "error") %> prohibited this response from being saved:</h2>
+
+      <ul>
+      <% @response.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :response %><br>
+    <%= f.select(:response, options_for_select([["positive", "positive"], ["neutral", "neutral"], ["negative", "negative"]])) %>
+  </div>
+  <div class="field">
+    <%= f.label :platform %><br>
+    <%= f.select(:platform, options_for_select([["Twitter", "Twitter"], ["Yelp", "Yelp"], ["Trip Advisor", "Trip Advisor"], ["Google Plus", "Google Plus"], ["Facebook", "Facebook"]])) %>
+   
+  </div>
+  <div class="field">
+    <%= f.label :reviewer %><br>
+    <%= f.text_field :reviewer %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

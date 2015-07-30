@@ -1,17 +1,64 @@
-<div class="row">
+<%#= render 'form' %>
+
+
+<<div class="row">
   <div class="col-xs-12 col-sm-6 col-sm-offset-3">
     <form>
-    	  <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+    	<div class="col-xs-12 col-sm-6 col-sm-offset-3">
 
-		<!-- <div class="form-group">
+		 <div class="form-group">
 			<label for="exampleInputName1">Your name</label>
 			<input type="text" class="form-control" id="exampleInputName1" placeholder="First and last name">
 		</div>
 		<div class="form-group">
 			<label for="exampleInputEmail1">Your Email</label>
 			<input type="email" class="form-control" id="exampleInputEmail1" placeholder="example@website.com">
-		</div> -->
+		</div> 
 <!-- Shiovhan should have dropdown code -->
+<!-- the following is a -form.html.erb from flix/app/views/movies-->
+<!--     <fieldset>
+    <ol>
+      <li class="required">
+        <%#= f.label :email %>
+        <%#= f.text_field :email, autofocus: true %>
+      </li>
+      <li class="required">
+        <%#= f.label :description %>
+        <%#= f.text_area :description, cols: 40, rows: 7 %>
+      </li>
+      <li class="required">
+        <%#= f.select :rating, Movie::RATINGS, prompt: "Pick one" %>        
+      </li>
+      <li class="required">
+        <%#= f.label :released_on %>
+        <%#= f.date_select :released_on %>
+      </li>
+      <li class="required">
+        <%#= f.label :total_gross %>
+        <%#= f.number_field :total_gross %>
+      </li>
+      <li class="required">
+        <%#= f.label :duration %>
+        <%#= f.text_field :duration, size: 10 %>
+      </li>
+      <li class="required">
+        <%#= f.label :image_file_name %>
+        <%#= f.text_field :image_file_name %>
+      </li>
+      <li>
+        <%#= f.label :cast %>
+        <%#= f.text_field :cast %>
+      </li>
+      <li>
+        <%#= f.label :director %>
+        <%#= f.text_field :director %>
+      </li>
+    </ol> 
+    <p>
+      <%#= f.submit %>
+      <%#= link_to "Cancel", movies_path, class: 'button' %>
+    </p>
+  </fieldset> -->
 
 		<h5>Type of Response 
 			  <i class="fa fa-question-circle"></i>
@@ -29,7 +76,7 @@
 		</div>
 		<p style="line-height: 5px;">&nbsp;</p>
 		<div class="form-group">
- -->			<label for="exampleInputName1">Customer Name</label>
+ 			<label for="exampleInputName1">Customer Name</label>
 			<input type="text" class="form-control" id="exampleInputName1" placeholder="Customer name">
 		</div>
 		<div class="row">
@@ -43,3 +90,4 @@
 
 
 
+ 
