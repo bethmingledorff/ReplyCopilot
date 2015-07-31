@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   root to: 'criteria#new'
 
 
-  get 'static_pages/about' => "static_pages#about"
+  get 'static_pages/about' 
   get 'static_pages/resources'
   get 'static_pages/terms_of_service'
 
