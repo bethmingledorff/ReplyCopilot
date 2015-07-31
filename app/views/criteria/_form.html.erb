@@ -1,3 +1,4 @@
+
 <center>
 <%= form_for(@criterium) do |f| %>
   <% if @criterium.errors.any? %>
@@ -12,24 +13,50 @@
     </div>
   <% end %>
 
+  <br>
+  <br>
+
+  <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+
   <div class="field">
     <%= f.label :customer_name %><br>
     <div class ="text_black"><%= f.text_field :customer_name %></div>
   </div>
+
   <div class="field">
     <%= f.label :response_type %><br>
     <%= f.select(:response_type, options_for_select([["positive", "positive"], ["neutral", "neutral"], ["negative", "negative"]])) %>
   </div>
+
+<!-- Single button -->
+<!-- <div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Review Type <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Postive</a></li>
+    <li><a href="#">Negative</a></li>
+    <li><a href="#">Neutral</a></li>
+  </ul>
+</div>
+ -->
   <div class="field">
     <%= f.label :responder_name %><br>
     <div class ="text_black"><%= f.text_field :responder_name %></div>
   </div>
+
   <div class="field">
     <%= f.label :responder_email %><br>
     <div class ="text_black"><%= f.text_field :responder_email %></div>
   </div>
-  <div class="actions">
-    <div class ="text_black"><%= f.submit :Submit %></div>
+    <!-- <div class="row">  -->
+    <!-- <div class="col-xs-12"> -->
+  <!-- <div class="col-xs-12 col-sm-6 col-sm-offset-3"> -->
+    <button type="submit" class="btn btn-lg btn-success col-xs-14 ">Generate Response</button>
   </div>
+
+  <!-- <div class="actions"> -->
+    <!-- <div class ="text_black"><%= f.submit :Submit %></div> -->
+  <!-- </div> -->
 <% end %>
 </center>
