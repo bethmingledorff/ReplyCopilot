@@ -1,15 +1,10 @@
 class StaticPagesController < ApplicationController
+  def about
+  end
 
-	def about
-		render 'about'
-	end
+  def resources
+  end
 
-	def resources
-
-	end
-
-	def terms_of_service
-
-	end
-
+  def terms_of_service
+  end
 end

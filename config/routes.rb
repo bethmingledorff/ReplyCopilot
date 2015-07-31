@@ -1,15 +1,18 @@
 Rails.application.routes.draw do
+  root to: 'criteria#new'
+
+
+  get 'static_pages/about' => "static_pages#about"
+  get 'static_pages/resources'
+  get 'static_pages/terms_of_service'
 
   resources :criteria
   resources :replies
   resources :users
-  root to: 'criteria#new'
 
   get "responses/new" => "responses#new"
   get "responses/:id" => "responses#show", as: "response"
 
-  get "static_pages/about" => "static_pages#about"
-  get "static_pages/resources" => "static_pages#resources"
 
 
 
