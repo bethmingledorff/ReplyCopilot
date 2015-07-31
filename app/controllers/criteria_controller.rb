@@ -76,6 +76,12 @@ class CriteriaController < ApplicationController
   # GET /criteria/new
   def new
     @criterium = Criterium.new
+
+#testing ajax stuff
+    # respond_to do |format|
+    #   format.html
+    #   format.json
+    # end
   end
 
   # GET /criteria/1/edit
