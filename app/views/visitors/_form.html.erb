@@ -1,0 +1,27 @@
+<%= form_for(@visitor) do |f| %>
+  <% if @visitor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@visitor.errors.count, "error") %> prohibited this visitor from being saved:</h2>
+
+      <ul>
+      <% @visitor.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <div class ="text_black"><%= f.text_field :name %></div>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <div class ="text_black"><%= f.email_field :email %></div>
+  </div>
+  <div class="actions">
+    <div class ="text_black"><%= f.submit :submit %></div>
+  </div>
+<% end %>
+
+
