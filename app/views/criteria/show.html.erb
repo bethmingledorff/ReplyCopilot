@@ -20,26 +20,70 @@
   <%= @criterium.responder_email %>
 </p> -->
 
+  <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+
+  <br>
+  <br>
 
 <% if @criterium.response_type == "positive"%>
-    <p><%=@positive_int %> <%=@criterium.customer_name%>. <%=@positive_line1%>  <%= @positive_line2%> <%= @positive_line3 %>  <%= @positive_line4 %> <%= @positive_line5 %>  <%= @positive_close %> <br><%=@criterium.responder_name%> <br> <%= @criterium.responder_email %>
-</p>  
+  <p>
+    <%=@positive_int %>, <%=@criterium.customer_name%>. 
+    <br>
+    <br>
+    <%= @positive_line1%>  
+    <%= @positive_line2%> 
+    <%= @positive_line3 %> 
+    <%= @positive_line4 %> 
+    <%= @positive_line5 %>
+    <br>
+    <br>
+    <%= @positive_close %>
+    <br>
+    <br>
+    <%=@criterium.responder_name%>
+    <br> 
+    <%= @criterium.responder_email %>
+  </p>  
+
 <% elsif @criterium.response_type == "neutral" %>
-      <p><%=@neutral_int %> <%=@neutral_line1%>  <%= @neutral_line2%> <%= @neutral_line3 %>  <%= @neutral_line4 %> <%= @neutral_line5 %> <%= @neutral_close %> <%= @criterium.responder_email %>.<br><%=@criterium.responder_name%> 
+    <p>
+      <%= @neutral_intro %>, <%=@criterium.customer_name%>. 
+      <br>
+      <br>
+      <%= @neutral_line1%>  
+      <%= @neutral_line2%> 
+      <%= @neutral_line3 %>  
+      <%= @neutral_line4 %> 
+      <%= @neutral_line5 %><%= @criterium.responder_email %>.
+      <br>
+      <br>
+      <%= @neutral_close %>
+      <br>
+      <br>
+      <%=@criterium.responder_name%> 
 </p> 
 <% elsif @criterium.response_type == "negative" %>
-  <p><%=@negative_int %> <%=@negative_line1%>  <%= @negative_line2%> <%= @negative_line3 %>  <%= @negative_line4 %> <%= @criterium.responder_email %> <%= @negative_line5 %> <%= @negative_close %> <br><%=@criterium.responder_name%> 
+  <p>
+    <%=@negative_int %>, <%=@criterium.customer_name%>. 
+  <br>
+  <br>
+  <%= @negative_line1 %>  
+  <%= @negative_line2 %> 
+  <%= @negative_line3 %>  
+  <%= @negative_line4 %><%= @criterium.responder_email %> 
+  <%= @negative_line5 %> 
+  <br>
+  <br>
+  <%= @negative_close %> 
+  <br>
+  <br>
+  <%=@criterium.responder_name%> 
 
   </p> 
 <% end %>
 
+<br>
+<br>
 
-
-<%= link_to 'Generate Another!', criterium_path %>
-<%#= link_to 'Enter New Information', new_criterium_path %>
+<%= link_to 'Generate Another!', criterium_path %> |
 <%= link_to 'Enter New Information', edit_criterium_path %>
-<%#= link_to 'Enter New Information', new_criterium_path, :remote => true %>
-<%#= link_to 'Enter New Information', { :controller => 'Critertia', :action => "new" } :remote => true %>
-<%#= link_to 'Back', new_criterium_path, class: "link_white" %>
-<%#= link_to render(:partial => 'shared/logo'), root_url %>
-
