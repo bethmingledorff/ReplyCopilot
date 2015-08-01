@@ -2,13 +2,29 @@ Rails.application.routes.draw do
   root to: 'criteria#new'
 
 
-  get 'static_pages/about' 
-  get 'static_pages/resources'
-  get 'static_pages/terms_of_service'
 
   resources :criteria
   resources :replies
   resources :users
+
+  get 'static_pages/about' 
+  get 'static_pages/resources'
+  get 'static_pages/terms_of_service'
+
+  get 'static_pages/why_respond_part1'
+  get 'static_pages/why_respond_part2'
+  get 'static_pages/why_respond_part3'
+  
+  get 'static_pages/when_to_delete_part1'
+  get 'static_pages/when_to_delete_part2'
+  get 'static_pages/when_to_delete_part3'
+  get 'static_pages/when_to_delete_part4'
+  get 'static_pages/when_to_delete_part5'
+  get 'static_pages/when_to_delete_part6'
+  get 'static_pages/when_to_delete_part7'
+
+  get 'static_pages/using_the_net_promoter_score'
+
 
   get "responses/new" => "responses#new"
   get "responses/:id" => "responses#show", as: "response"
