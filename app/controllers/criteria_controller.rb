@@ -112,7 +112,8 @@ class CriteriaController < ApplicationController
   ]
     @positive_line4 = pos_line4.sample
 
-    pos_line5 = ["We can't wait for the next opportunity to serve you and will do everthing in our power to once again allow you to experience the best that we have to offer. ", 
+    pos_line5 = [
+      "We can't wait for the next opportunity to serve you and will do everthing in our power to once again allow you to experience the best that we have to offer. ", 
       "We sincerely look forward to serving you time after time. ", 
       "Please visit us again. It will be our honor and delight to serve you. ", 
       "We will do whatever it takes to once again deliver an experience worth bragging about. ", 
@@ -306,7 +307,7 @@ class CriteriaController < ApplicationController
   ]
     @neutral_intro = neut_intro.sample
     
-    neut_line1 =  [
+    neut_line1 = [
     "We are constantly working on ways to deliver customer experiences that exceed expectations. ", 
     "Our goal is to gain your trust and endorsment and we take your opinion seriously. ", 
     "We are thankful for your business and the feedback you have so generously provided. ", 
@@ -319,7 +320,7 @@ class CriteriaController < ApplicationController
   ]
     @neutral_line1 = neut_line1.sample
 
-    neut_line2 =  [
+    neut_line2 = [
     "It looks like we were not up to par in some areas and for that we apologize. ",
     "We have forwarded your concerns to the appropriate departments and will most certainly follow up. ", 
     "Everyone here is open to finding ways to better serve our customers and we will certainly use your insights to develop better business practices. ", 
@@ -333,7 +334,7 @@ class CriteriaController < ApplicationController
   ]
     @neutral_line2 = neut_line2.sample
 
-    neut_line3 =  [
+    neut_line3 = [
       "We are thankful for your kind words and encouragement. ", 
       "We are glad we were able to serve you! ", "Please let us know when you are coming again. ", 
       "We take your concerns seriously and we are working on ways to make sure everything we do is customer-centric. ", 
@@ -345,7 +346,7 @@ class CriteriaController < ApplicationController
     ]
     @neutral_line3 = neut_line3.sample
 
-    neut_line4 =  [
+    neut_line4 = [
     "We are listening to our customers each and every time. Your feedback will help us shape what we do. ", 
     "We realize you have many options and we are thankful you care enough to give us information that helps shape our business. ", 
     "We will try our best to deliver a customer experience worth bragging about. ", 
@@ -359,7 +360,7 @@ class CriteriaController < ApplicationController
   ]
     @neutral_line4 = neut_line4.sample
 
-    neut_line5 =  [
+    neut_line5 = [
     "We hope to see you soon and we are confident your experience will be worthy of a five star review. If you have further suggestions, please contact me at ", 
     "If I can help you in any way please reach out to me via email at ", 
     "In the interim please contact me if I can further assist you. My email is: ", 
