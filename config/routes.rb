@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   get 'static_pages/why_respond_part1'
   get 'static_pages/why_respond_part2'
   get 'static_pages/why_respond_part3'
-  
+
   get 'static_pages/when_to_delete_part1'
   get 'static_pages/when_to_delete_part2'
   get 'static_pages/when_to_delete_part3'
@@ -23,7 +23,12 @@ Rails.application.routes.draw do
   get 'static_pages/when_to_delete_part6'
   get 'static_pages/when_to_delete_part7'
 
-  get 'static_pages/using_the_net_promoter_score'
+  get 'static_pages/using_the_nps_part1'
+  get 'static_pages/using_the_nps_part2'
+  get 'static_pages/using_the_nps_part3'
+  get 'static_pages/using_the_nps_part4'
+  get 'static_pages/using_the_nps_part5'
+
 
 
   get "responses/new" => "responses#new"
