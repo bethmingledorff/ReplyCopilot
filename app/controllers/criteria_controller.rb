@@ -384,6 +384,7 @@ class CriteriaController < ApplicationController
     "With gratitude,"
   ]
     @neutral_close = neut_close.sample
+    @criterium.destroy
   end
 
   # GET /criteria/new

@@ -6,11 +6,13 @@ class VisitorsController < ApplicationController
 
   def create
     @visitor = Visitor.new(secure_params)
-    byebug
+    # byebug
     if @visitor.valid?
       @visitor.subscribe
-      flash[:notice] = "Signed up #{@visitor.email}."
+            flash[:notice] = "Signed up #{@visitor.email}."
       redirect_to root_path
+      flash[:notice] = "Signed up #{@visitor.email}."
+
     else
       flash[:notice] = "Failed to sign up."
       render :new
@@ -21,7 +23,7 @@ class VisitorsController < ApplicationController
   private
 
   def secure_params
-    params.require(:visitor).permit(:email, :name)
+    params.require(:visitor).permit(:email)
   end
 
 end
