@@ -384,12 +384,12 @@ class CriteriaController < ApplicationController
     "With gratitude,"
   ]
     @neutral_close = neut_close.sample
-    @criterium.destroy
   end
 
   # GET /criteria/new
   def new
     @criterium = Criterium.new
+
 #testing ajax stuff
     # respond_to do |format|
     #   format.html
