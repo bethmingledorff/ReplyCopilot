@@ -6,6 +6,7 @@ class VisitorsController < ApplicationController
 
   def create
     @visitor = Visitor.new(secure_params)
+    byebug
     if @visitor.valid?
       @visitor.subscribe
       flash[:notice] = "Signed up #{@visitor.email}."
