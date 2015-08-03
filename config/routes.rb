@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
 
 
+  resources :visitors
+  resources :visitors, only: [:new, :create]
   resources :criteria
   resources :replies
   resources :users
