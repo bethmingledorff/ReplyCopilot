@@ -167,8 +167,10 @@ DEPENDENCIES
   spring
   turbolinks
   uglifier (>= 1.3.0)
-<<<<<<< HEAD
   web-console (~> 2.0)
+<<<<<<< HEAD
 =======
   web-console (~> 2.0)
 >>>>>>> origin/justin_mailchimp_deployed
+=======
+>>>>>>> fdce2653762d30e6d0d32f85d6bfde42ffab933c
