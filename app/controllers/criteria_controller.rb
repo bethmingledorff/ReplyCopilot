@@ -384,7 +384,6 @@ class CriteriaController < ApplicationController
     "With gratitude,"
   ]
     @neutral_close = neut_close.sample
-    @criterium.destroy
   end
 
   # GET /criteria/new
@@ -434,7 +433,6 @@ class CriteriaController < ApplicationController
   # DELETE /criteria/1
   # DELETE /criteria/1.json
   def destroy
-    @criterium.destroy
     respond_to do |format|
       format.html { redirect_to criteria_url}
       format.json { head :no_content }
