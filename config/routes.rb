@@ -13,25 +13,11 @@ Rails.application.routes.draw do
   get 'static_pages/resources'
   get 'static_pages/terms_of_service'
 
-  get 'static_pages/why_respond_part1'
-  get 'static_pages/why_respond_part2'
-  get 'static_pages/why_respond_part3'
+  get 'static_pages/why_respond'
 
-  get 'static_pages/when_to_delete_part1'
-  get 'static_pages/when_to_delete_part2'
-  get 'static_pages/when_to_delete_part3'
-  get 'static_pages/when_to_delete_part4'
-  get 'static_pages/when_to_delete_part5'
-  get 'static_pages/when_to_delete_part6'
-  get 'static_pages/when_to_delete_part7'
+  get 'static_pages/when_to_delete'
 
-  get 'static_pages/using_the_nps_part1'
-  get 'static_pages/using_the_nps_part2'
-  get 'static_pages/using_the_nps_part3'
-  get 'static_pages/using_the_nps_part4'
-  get 'static_pages/using_the_nps_part5'
-
-
+  get 'static_pages/using_the_nps'
 
   get "responses/new" => "responses#new"
   get "responses/:id" => "responses#show", as: "response"
