@@ -33,7 +33,7 @@
 	color: #fff;
 }
 .text-blue {
-	color: #272e39;
+	color: #00add7;
 }
 .text-green {
 	color: #78b349;
@@ -57,7 +57,6 @@ body {
     background-size: cover;
     color: white;
     padding-top: 80px;
-    padding-bottom: 80px;
 }
 h4 {
 	color: #777;
@@ -89,6 +88,9 @@ i {
 i:hover {
 	color: #272e39;	
 }
+i.fa.fa-question-circle:hover {
+	color: #00add7;
+}
 footer {
 	height: 50px;
 	background-color: #f8f8f8;
@@ -102,37 +104,8 @@ footer {
 /* html styling end*/
 
 /* classes */
-.navbar-nav {
+.nav-pills {
 	float: right;
+	padding-top: 5px;
 }
-/*
-.container {
-	margin: auto;
-	width: 90%;
-}
-.center {
-	text-align: center;
-}
-.logo {
-	padding: 70px 70px 100px 70px;
-}
-.button {
-	display: inline-block;
-	width: 150px;
-	margin: 5px;
-	padding: 15px 50px 15px 50px;
-	background-color: #f7d900;
-	border-style: none;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 700;
-	font-size: 14px;
-	color: #000;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	line-height: 200%;
-}
-.home-social {
-	margin-top: 20px;
-}
-*/
 /* classes end */
