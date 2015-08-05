@@ -62,12 +62,23 @@ body {
 h4 {
 	color: #777;
 }
+h4.body-text {
+	color: #fff;
+}
+
 h3:hover {
 	color: #fff;
 }
 a	{
 	color: #777;
 }
+a.body-text	{
+	color: #fff;
+}
+a.body-link	{
+	color: #fff;
+}
+
 a:hover {
 	text-decoration: none;
 	color: #333;
