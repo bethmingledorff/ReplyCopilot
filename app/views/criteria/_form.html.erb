@@ -1,4 +1,3 @@
-
 <center>
 <%= form_for(@criterium) do |f| %>
   <% if @criterium.errors.any? %>
@@ -14,28 +13,42 @@
   <% end %>
 
   <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-
-  <div class="field">
-    <%= f.label :customer_name %><br>
-    <div class ="text_black"><%= f.text_field :customer_name %></div>
+  <div class="form-group">
+    <%= f.label :customer_name, "Customer Name" %><br>
+    <div class ="text_black"><%= f.text_field :customer_name, class: 'form-control', placeholder:"Customer name" %></div>
   </div>
 
-  <div class="field">
-    <%= f.label :response_type %><br>
-    <%= f.select(:response_type, options_for_select([["positive", "positive"], ["neutral", "neutral"], ["negative", "negative"]])) %>
+
+  <div class="form-group ">
+
+    <%= f.label :response_type, "Type of Response" %><br>
+    <%= f.select(:response_type, 
+      options_for_select([["positive", "positive"], ["neutral", "neutral"], ["negative", "negative"]]),
+      {}, 
+      {class: "btn btn-group form-control text-grey dropdown-toggle ", 
+        "span" => "caret",
+        "data-toggle" => "dropdown", 
+        "aria-haspopup" => "true", 
+        "aria-expanded" => "false",  }) %>
   </div>
 
-  <div class="field">
-    <%= f.label :responder_name %><br>
-    <div class ="text_black"><%= f.text_field :responder_name %></div>
+  <div class="form-group">
+    <%= f.label :responder_name, "Your Name" %><br>
+    <div class ="text_black"><%= f.text_field :responder_name, class: 'form-control', placeholder:"First and last name" %></div>
   </div>
 
-  <div class="field">
-    <%= f.label :responder_email %><br>
-    <div class ="text_black"><%= f.email_field :responder_email %></div>
+  <div class="form-group">
+    <%= f.label :responder_email, "Your Email" %><br>
+    <div class ="text_black"><%= f.email_field :responder_email, class: 'form-control', placeholder:"example@website.com" %></div>
   </div>
-    <button type="submit" class="btn btn-lg btn-success col-xs-14 ">Generate Response</button>
+      <div class="row">
+        <div class="col-xs-12">
+          <button type="submit" class="btn btn-lg btn-success col-xs-12 ">Generate Response</button>
+        </div>
+      </div>
   </div>
+
+
 
   <!-- <div class="actions"> -->
     <!-- <div class ="text_black"><%#= f.submit :Submit %></div> -->

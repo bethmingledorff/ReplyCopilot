@@ -11,12 +11,17 @@
     </div>
   <% end %>
 
-
-  <div class="field">
-    <%= f.label :email %><br>
-    <div class ="text_black"><%= f.email_field :email %></div>
+<center>
+  <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+   <div class="form-group">     
+    <%= f.label :email, "Enter your email address" %><br>
+    <div class ="text_black"><%= f.email_field :email, class: 'form-control', placeholder:"name@example.com"  %></div>
   </div>
-  <div class="actions">
-    <div class ="text_black"><%= f.submit :submit %></div>
-  </div>
+   <div class="row">
+      <div class="col-xs-12">
+        <button type="submit" class="btn btn-lg btn-success col-xs-14 ">Submit</button>
+      </div>
+    </div>
+ </div>
 <% end %>
+</center>

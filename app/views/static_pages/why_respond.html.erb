@@ -70,8 +70,13 @@
 		<br>
 		<br>
 
-    <%= button_to "Try Reply Copilot!", new_criterium_path, :id => "button",
-      :class => "btn btn-lg btn-success col-xs-14", :method => :get %>
+<div><h3>
+  Want more great content? Signup for ReviewTrackers weekly email!
+</h3></div>
+</center>
+<% @visitor = Visitor.new %>
+<%= render 'signup' %>
+
 
 	</center>
 
