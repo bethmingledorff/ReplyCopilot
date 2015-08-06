@@ -17,44 +17,40 @@
 
 /* UTILITY CLASS */
 .spacer {
-	margin-top: 40px;
-	display: block;
+        margin-top: 40px;
+        display: block;
 }
 .text-black {
-	color: #000;
+        color: #000;
 }
 .text-gray {
-	color: #777;
+        color: #777;
 }
 .text-navy {
-	color: #272e39;
+        color: #272e39;
 }
 .text-white {
-	color: #fff;
+        color: #fff;
 }
 .text-blue {
-	color: #00add7;
+        color: #00add7;
 }
 .text-green {
-	color: #78b349;
+        color: #78b349;
 }
 .text-red {
-	color: #e85e48;
+        color: #e85e48;
 }
 .text-left {
-	text-align: left;
+        text-align: left;
 }
 .text-right {
-	text-align: right;
+        text-align: right;
 }
 /* END UTILITY CLASS */
-
-
-
-
 /* html styling */
 body {
-	background-image: url('background.png');
+        background-image: url('background.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment:fixed;
@@ -64,54 +60,53 @@ body {
     padding-bottom: 60px;
 }
 h4 {
-	color: #777;
+        color: #777;
 }
 h4.body-text {
-	color: #fff;
+        color: #fff;
 }
 
 h3:hover {
-	color: #fff;
+        color: #fff;
 }
-a	{
-	color: #777;
+a       {
+        color: #777;
 }
-a.body-text	{
-	color: #fff;
+a.body-text     {
+        color: #fff;
 }
-a.body-link	{
-	color: #fff;
+a.body-link     {
+        color: #fff;
 }
 
 a:hover {
-	text-decoration: none;
-	color: #333;
+        text-decoration: none;
+        color: #333;
 }
 i {
-	padding: 5px;
+        padding: 5px;
 }
 i:hover {
-	color: #272e39;	
+        color: #272e39;
 }
 i.fa.fa-question-circle:hover {
-	color: #00add7;
+        color: #00add7;
 }
 footer {
-	height: 50px;
-	background-color: #f8f8f8;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	position:fixed;
-	left:0px;
-	bottom:0px;
-	width:100%;
+        height: 50px;
+        background-color: #f8f8f8;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        position:fixed;
+        left:0px;
+        bottom:0px;
+        width:100%;
 }
 /* html styling end*/
 
 /* classes */
 .nav-pills {
-	float: right;
-	padding-top: 5px;
+        float: right;
+        padding-top: 5px;
 }
 /* classes end */
-
