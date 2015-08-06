@@ -30,7 +30,11 @@
         "data-toggle" => "dropdown", 
         "aria-haspopup" => "true", 
         "aria-expanded" => "false",  }) %>
-  </div>
+
+        <%=link_to "?", static_pages_review_type_info_path, class: "text-white"%>
+
+<!--         <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+ -->  </div>
 
   <div class="form-group">
     <div class = "text-left"><%= f.label :responder_name, "Your Name" %><br></div>
