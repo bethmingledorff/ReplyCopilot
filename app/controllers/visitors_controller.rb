@@ -9,9 +9,8 @@ class VisitorsController < ApplicationController
     # byebug
     if @visitor.valid?
       @visitor.subscribe
-            flash[:notice] = "Signed up #{@visitor.email}."
-      redirect_to root_path
       flash[:notice] = "Signed up #{@visitor.email}."
+      redirect_to root_path
 
     else
       flash[:notice] = "Failed to sign up."

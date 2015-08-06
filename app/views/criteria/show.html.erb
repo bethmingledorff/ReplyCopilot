@@ -4,14 +4,12 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-    <br>
-    <br>
-      <h3 class="text-center">You have permission to reply.</h3>
+    <div class="col-xs-12 col-sm-8  col-sm-offset-2">
+
       <div class="panel panel-default">
         <!-- Panel contents External Links -->
         <div class="panel-heading">
-          <center><h4 class="text-black">Your response</h4></center>
+          <center><h4 class="text-black">You have permission to reply!</h4></center>
         </div>
         <div class="panel-body">
           <ul class="text-black">
@@ -71,28 +69,20 @@
 
               </p> 
             <% end %>
-            <br>
-            <br>
+
               <button type="submit" class="btn btn-lg btn-success col-xs-14 ">
                 <%= link_to 'Generate Another!', criterium_path, class: "text-white"  %></button>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp; 
+
               <button type="submit" class="btn btn-lg btn-success col-xs-14 ">
                 <%= link_to 'Enter New Information', edit_criterium_path, class: "text-white" %></button>
-          </ul>
-          <br>  
               <center>
-      <p class="text-black">
-      Want more information?<br>Signup for ReviewTrackers weekly email!
-    </p>
+
   </center>
 </h3>
 </div>
 </center>
+<br>
+<br>
 <% @visitor = Visitor.new %>
 <%= render 'signup' %>
   </div>
