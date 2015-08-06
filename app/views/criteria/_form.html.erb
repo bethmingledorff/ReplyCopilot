@@ -18,11 +18,10 @@
     <div class ="text_black"><%= f.text_field :customer_name, class: 'form-control ', placeholder:"Customer name" %></div>
   </div>
 
-
   <div class="form-group ">
-
-    <div class = "text-left"><%= f.label :response_type, "Type of Response" %><br></div>
-    <%= f.select(:response_type, 
+    <div class = "text-white">
+    <div class = "text-left"><%= f.label :response_type, "Type of Response" %><%= link_to "<i class=\"glyphicon glyphicon-question-sign\"></i>".html_safe, static_pages_type_of_response_path, class: 'text-white'-%><br></div>
+   <%= f.select(:response_type, 
       options_for_select([["positive", "positive"], ["neutral", "neutral"], ["negative", "negative"]]),
       {}, 
       {class: "btn btn-group form-control text-grey dropdown-toggle ", 
@@ -30,8 +29,8 @@
         "data-toggle" => "dropdown", 
         "aria-haspopup" => "true", 
         "aria-expanded" => "false",  }) %>
+ </div>
   </div>
-
   <div class="form-group">
     <div class = "text-left"><%= f.label :responder_name, "Your Name" %><br></div>
     <div class ="text_black"><%= f.text_field :responder_name, class: 'form-control', placeholder:"First and last name" %></div>
