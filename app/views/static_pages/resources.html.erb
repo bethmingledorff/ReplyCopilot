@@ -8,30 +8,30 @@
 
 <br>
 
-	<center>
-<h3>
-	<div class="text-white">
-	<li role="presentation">
-		<%=link_to "Why respond to reviews?", static_pages_why_respond_path, class: "body-link"%></li>
-	<br>
-	<li role="presentation"><%=link_to "When to delete a review or comment", static_pages_when_to_delete_path, class: "body-link"%></li>
-	<br>
-	<li role="presentation"><%=link_to "Using the Net Promoter Score", static_pages_using_the_nps_path, class: "body-link"%></li>
-	<br>
-	<li role="presentation"><a href="http://www.reviewtrackers.com/the18wordresponse" class="body-link"target="_blank">The 18 Word Response Ebook</a></li>
-	<br>
-	<li role="presentation"><a href="http://www.reviewtrackers.com/Weekly-Newsletter" class="body-link" target="_blank">Subscribe to Review Management Newsletter</a></li>
-	<br>
-	<li role="presentation"><a href="http://www.reviewtrackers.com/" class="body-link" target="_blank">Online Review Management</a></li>
+<div class="row">
+	<div class="row text-white col-xs-12 col-sm-6 col-sm-offset-3">
+	<h3>
+		<%=link_to "Why respond to reviews?", static_pages_why_respond_path, class: "body-link"%></h3>
+
+	<h3><%=link_to "When to delete a review or comment", static_pages_when_to_delete_path, class: "body-link"%></h3>
+
+	<h3><%=link_to "Using the Net Promoter Score", static_pages_using_the_nps_path, class: "body-link"%></h3>
+
+	<h3><a href="http://www.reviewtrackers.com/the18wordresponse" class="body-link"target="_blank">The 18 Word Response Ebook</a></h3>
+
+	<h3 role="presentation"><a href="http://www.reviewtrackers.com/Weekly-Newsletter" class="body-link" target="_blank">Subscribe to Review Management Newsletter</a></h3>
+
+	<h3 role="presentation"><a href="http://www.reviewtrackers.com/" class="body-link" target="_blank">Online Review Management</a></h3>
 </div>
-</h3>
+<div>
 <br>
 <br>
-
-
-  <%= button_to "Try Reply Copilot!", new_criterium_path, :id => "button",
-  :class => "btn btn-lg btn-success col-xs-14", :method => :get %>
-
-
+<center>
+<div class="row">
+	<div class="text-white col-xs-12 col-sm-6 col-sm-offset-3">
+  	<%= button_to "Try Reply Copilot!", new_criterium_path, :id => "button",
+  	:class => "btn btn-lg btn-success col-xs-14", :method => :get %>
 	</center>
+	</div>
+</div>
 

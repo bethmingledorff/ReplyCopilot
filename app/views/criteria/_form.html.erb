@@ -14,14 +14,14 @@
 
   <div class="col-xs-12 col-sm-6 col-sm-offset-3">
   <div class="form-group">
-    <%= f.label :customer_name, "Customer Name" %><br>
-    <div class ="text_black"><%= f.text_field :customer_name, class: 'form-control', placeholder:"Customer name" %></div>
+    <div class = "text-left"><%= f.label :customer_name, "Customer Name" %><br></div>
+    <div class ="text_black"><%= f.text_field :customer_name, class: 'form-control ', placeholder:"Customer name" %></div>
   </div>
 
 
   <div class="form-group ">
 
-    <%= f.label :response_type, "Type of Response" %><br>
+    <div class = "text-left"><%= f.label :response_type, "Type of Response" %><br></div>
     <%= f.select(:response_type, 
       options_for_select([["positive", "positive"], ["neutral", "neutral"], ["negative", "negative"]]),
       {}, 
@@ -33,12 +33,12 @@
   </div>
 
   <div class="form-group">
-    <%= f.label :responder_name, "Your Name" %><br>
+    <div class = "text-left"><%= f.label :responder_name, "Your Name" %><br></div>
     <div class ="text_black"><%= f.text_field :responder_name, class: 'form-control', placeholder:"First and last name" %></div>
   </div>
 
   <div class="form-group">
-    <%= f.label :responder_email, "Your Email" %><br>
+    <div class = "text-left"><%= f.label :responder_email, "Your Email" %><br></div>
     <div class ="text_black"><%= f.email_field :responder_email, class: 'form-control', placeholder:"example@website.com" %></div>
   </div>
       <div class="row">
