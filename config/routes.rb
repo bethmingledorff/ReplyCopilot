@@ -19,6 +19,8 @@ Rails.application.routes.draw do
 
   get 'static_pages/using_the_nps'
 
+  get 'static_pages/review_type_info'
+
   get "responses/new" => "responses#new"
   get "responses/:id" => "responses#show", as: "response"
 
