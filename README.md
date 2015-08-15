@@ -4,8 +4,20 @@ Considered an industry-wide best practice, replying to each review, or social me
 
 Developed through a Startup Institute partnership with online review management software provider ReviewTrackers, this tool is free for anyone to use.
 
+Suggestions for responses? Questions? Send them here: contact@replycopilot.com
 
+Team
 
+Allie Fleming 
+Beth Mingledorff 
+Justin Schoen 
+Richard Kwarteng 
+Shiovhan Boykin
+
+Partners
+
+Brian Sparker 
+Chris Campbell
 
 
 
